@@ -1,0 +1,90 @@
+/* Global styles for a clean, document-like layout */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.page-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.page-subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  opacity: 0.85;
+}
+
+.save-status {
+  font-size: 0.875rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.15);
+  border: 1px solid rgba(45, 212, 191, 0.8);
+  color: #a7f3d0;
+}
+
+.editor-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.editor {
+  background: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  min-height: calc(100vh - 6rem);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  padding: 1rem 1.25rem 2rem;
+}
+
+.editor .ql-container {
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+.editor .ql-editor {
+  min-height: 60vh;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.loading-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  min-height: 300px;
+  border-radius: 0.75rem;
+  background: #e5e7eb;
+  color: #4b5563;
+  font-weight: 500;
+}
+
